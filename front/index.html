@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-fixed-top navbar-light bg-faded">
+            <div class="input-group" id="room-select-module">
+                <input id="room-number" type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                    <button id="room-go" class="btn btn-secondary" type="button">Go!</button>
+                </span>
+            </div>
+        </nav>
+        <div id="rooms" class="container-fluid">
+            <div class="row">
+            </div>
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4" style="display: none" id="mother-card">
+            <div class="card">
+                <div class="card-block">
+                    <h4 class="card-title"></h4>
+                    <p class="card-text"> 欢迎来到聊天室（正在连接...）</p>
+                    <div class="input-group">
+                            <input name="talk-content" type="text" class="form-control" placeholder="say something...">
+                            <span class="input-group-btn">
+                                <button name="talk-send" class="btn btn-primary" type="button">Send</button>
+                            </span>
+                    </div>
+                </div>
+                
+                <ul class="list-group list-group-flush saying-board">
+                </ul>
+
+            </div>
+        </div>
+    </header>
+    <section>
+
+    </section>
+
+
+
+
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/websocket.js"></script>
+</body>
+
+</html>
